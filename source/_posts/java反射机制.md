@@ -4,7 +4,6 @@ date: 2019/7/13 15:46:25
 categories: java
 tags: java
 permalink: Java_reflection
-
 ---
 
 #### 一、 什么是反射(Reflection)
@@ -181,3 +180,4 @@ public class test1 {
 
 > - 反射会额外消耗一定的系统资源，如果不需要动态地创建一个对象，那么就不需要用反射。
 > - 反射调用方法时可以忽略权限检查，可以利用这个特性来获取到一些类的私有属性和方法，但也可能破坏封装性而导致安全问题。
+

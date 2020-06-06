@@ -4,7 +4,7 @@ categories: hexo
 tags: 
   - hexo
 permalink: hexo_opt
-date: 2020/6/1 20:46:25
+date: 2020/6/3 20:41:52
 
 ---
 
@@ -14,7 +14,7 @@ date: 2020/6/1 20:46:25
 
 <!--more--> 
 
-![hexo_load_analysis](./images/hexo_load_analysis.png)
+![hexo_load_analysis](/images/hexo_load_analysis.png)
 
 于是将其换位国内的CDN服务
 
