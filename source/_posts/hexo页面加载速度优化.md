@@ -14,7 +14,7 @@ date: 2020/6/3 20:41:52
 
 <!--more--> 
 
-![hexo_load_analysis](/images/hexo_load_analysis.png)
+![hexo_load_analysis](https://img-blog.csdnimg.cn/20200608005226404.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01TRE5fdGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
 
 于是将其换位国内的CDN服务
 
@@ -36,3 +36,6 @@ hexo目录/themes/主题名称/layout/_partial/after-footer.ejs
 
 将`//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js `替换为`//code.jquery.com/jquery-2.0.3.min.js `
 
+
+
+> 另外，可以下载懒加载插件并在配置文件中配置图片lazyload，进一步减少网页呈现的时间

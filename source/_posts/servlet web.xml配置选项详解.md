@@ -19,7 +19,7 @@ permalink: servlet-web-xml
 
 <!--more--> 
 
-#### \<web-app\>
+#### **\<web-app\>**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,7 +33,7 @@ permalink: servlet-web-xml
 这是整个配置文件的根标签，web.xml的模式文件是由Sun公司定义的，它必须标明web.xml使用的是哪个模式文件。
 
 ----
-#### \<display-name\>
+#### **\<display-name\>**
 
 ```xml
 <display-name>serTest</display-name>
@@ -41,7 +41,7 @@ permalink: servlet-web-xml
 它标注了该web项目的名字，提供GUI工具可能会用来标记这个特定的Web应用的一个名称
 
 ---
-#### \<welcome-list-file\>
+#### **\<welcome-list-file\>**
 
 ```xml
   <welcome-file-list>
@@ -56,7 +56,7 @@ permalink: servlet-web-xml
 \<welcome-file-list\>定义了首页文件，也就是用户直接输入域名时跳转的页面（如http://localhost:8080/）
 
 ----
-#### \<servlet>
+#### **\<servlet>**
 用来声明一个servlet的数据，主要有以下子元素：
 
 - **\<servlet-name>** 
@@ -68,6 +68,7 @@ permalink: servlet-web-xml
 - **\<init-param></init-param>** 
   用来定义初始化参数，可有多个init-param。在servlet类中通过ServletConfig对象传入init函数，通过- getInitParamenter(String name)方法访问初始化参数
   例如使用\<init-param>来初始化数据库连接参数
+
 ```java
 public void init(ServletConfig config) throws SevletException{
 	super(config);
@@ -188,16 +189,16 @@ src文件夹中是定义的两个servlet类（Test和Img）和一个逻辑事务
 
 ----
 
-#### \<filter>
+#### **\<filter>**
 过滤器元素将一个名字与一个实现javax.servlet.Filter接口的类相关联。
 
 ----
 
-#### \<listener>
+#### **\<listener>**
  Listener元素指出事件监听程序类
 
 ----
-#### \<session-config>
+#### **\<session-config>**
 配置会话超时，单位是分钟
 
 ```xml
@@ -207,7 +208,7 @@ src文件夹中是定义的两个servlet类（Test和Img）和一个逻辑事务
 ```
 ----
 
-#### \<error-page>
+#### **\<error-page>**
  在返回特定HTTP状态代码时，或者特定类型的异常被抛出时，能够制定将要显示的页面。 
 
 

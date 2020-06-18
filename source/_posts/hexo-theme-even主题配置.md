@@ -15,7 +15,7 @@ permalink: Hexo_layout
 
 
 
-#### 1、文章配置
+#### **1、文章配置**
 
 - 新建文章
 - **Front-matter** 
@@ -27,7 +27,7 @@ permalink: Hexo_layout
 
 <!--more--> 
 
-#### 2、添加分类、标签、归档统计页
+#### **2、添加分类、标签、归档统计页**
 
 使用命令新建三个页面
 
@@ -79,35 +79,21 @@ menu:
   Archives: /archives/
 ```
 
+#### **3、文章访问量统计**
+
+- 通过LeadCloud接口获取文章访问量统计
 
 
-#### 3、文章访问量统计
-
-通过LeadCloud接口获取文章访问量统计
+- 打开LeanCloud官网，进入注册页面注册。完成邮箱激活后，点击头像，进入控制台页面 
 
 
-
-**配置LeadCloud**
-
-打开LeanCloud官网，进入注册页面注册。完成邮箱激活后，点击头像，进入控制台页面 
+- 创建一个新应用，并创建名称为 Counter 的 Class（权限选择无限制） 
 
 
-
-**创建一个新应用**
-
-创建一个新应用，并创建名称为 Counter 的 Class（权限选择无限制） 
+- 在LeanCloud中所创建的应用的 设置->应用Key 中查看 app_id 与 app_key 
 
 
-
-**配置 app_id 与 app_key** 
-
-在LeanCloud中所创建的应用的 设置->应用Key 中查看 app_id 与 app_key 
-
-
-
-**写入主题配置文件** 
-
-在hexo_path/themes/even/_config.yml配置文件的leancloud字段填入app_id 与 app_key 
+- 在hexo_path/themes/even/_config.yml配置文件的leancloud字段填入app_id 与 app_key 
 
 ```yaml
 # LeanCloud
@@ -124,7 +110,7 @@ leancloud:
 
 
 
-#### 4、设置文章打赏
+#### **4、设置文章打赏**
 
 配置主题文件中的reward字段开启和关闭文章打赏功能
 
@@ -150,7 +136,7 @@ reward: false
 
 
 
-#### 5、设置底部社交链接
+#### **5、设置底部社交链接**
 
 目前支持：Email, Stack Overflow, Twitter, Facebook, Github, 微博以及知乎 
 
@@ -171,7 +157,7 @@ social:
 
 
 
-#### 6、设置文章版权
+#### **6、设置文章版权**
 
 修改主题配置文件中的 copyright 字段开启/关闭，如：
 
@@ -183,8 +169,6 @@ copyright:
 ```
 
 license的值可以是HTML
-
-
 
 当文章版权信息开启时，可通过文章 Markdown 头部： 
 
